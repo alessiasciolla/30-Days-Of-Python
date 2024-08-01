@@ -1,1 +1,31 @@
+tupla_vuota=()
+sorelle = ('Anna', 'Vittoria')
+fratelli = ('Andrea', 'Luca')
+fratelli_e_sorelle = sorelle + fratelli
+numero_fratelli = len(fratelli_e_sorelle)
+print(numero_fratelli)
+family_members = fratelli_e_sorelle + ('Padre', 'Madre')
+print(family_members)
+family_members = fratelli_e_sorelle + ('Roberto', 'Stefania')
+print(family_members)
+fratelli_e_sorelle = family_members[:-2]
+genitori = family_members[-2:]
+print(fratelli_e_sorelle)
+print(genitori)
+frutta = ('anguria', 'pesca', 'melone')
+verdura = ('pomodori', 'insalata', 'peperoni')
+prodotti_animali = ('uova', 'uova', 'yogurt')
+food_stuff_tp = frutta + verdura + prodotti_animali
+print(food_stuff_tp)
+food_stuff_lt = list(food_stuff_tp)
+print(food_stuff_lt)
+food_stuff_lt_tagliato = food_stuff_lt[3:-3]
+print(food_stuff_lt_tagliato)
+delete food_stuff_tp
+nordic_countries = ('Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden')
+is_estonia_nordic = 'Estonia' in nordic_countries
+print(is_estonia_nordic)
+is_iceland_nordic = 'Iceland' in nordic_countries
+print(is_iceland_nordic)
+
 
