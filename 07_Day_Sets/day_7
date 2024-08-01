@@ -38,4 +38,11 @@ age_set = set(age)
 print(len(age))  # Lunghezza dell'elenco
 print(len(age_set))  # Lunghezza dell'insieme
 stringa: ogni tipo di dati scritto come testo
-elenco:
+elenco:raccolta di dati ordinata e modificabile
+tupla: raccolta di dati ordinata e che non si possono modificare
+set: raccolta di dati non ordinata, non modificata e non indicizzata
+frase = "Sono un insegnante e mi piace ispirare e insegnare alle persone."
+parole_uniche = set(frase.split())
+numero_parole_uniche = len(parole_uniche)
+print(parole_uniche)
+print(numero_parole_uniche)
