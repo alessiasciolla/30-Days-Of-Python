@@ -1,1 +1,40 @@
-
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+lunghezza_it_companies = len(it_companies)
+print(lunghezza_it_companies)
+it_companies.add('Twitter')
+print(it_companies)
+it_companies.update(['Snapchat', 'Spotify', 'Linkedin'])
+print(it_companies)
+it_companies.remove('Oracle')
+print(it_companies)
+remove(): se l'elemento non viene trovato genera, questa funzione genera degli errori
+discard(): se l'elemento non viene trovato non fa nulla
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+unione_AB = A.union(B)
+print(unione_AB)
+intersezione_AB = A.intersection(B)
+print(intersezione_AB)
+sottoinsieme = A.issubset(B)
+print(sottoinsieme)
+disgiunti = A.isdisjoint(B)
+print(disgiunti)
+unione_AB = A.union(B)
+unione_BA = B.union(A)
+print(unione_AB)
+print(unione_BA)
+unione_AB = A.union(B)
+unione_BA = B.union(A)
+print(unione_AB)
+print(unione_BA)
+differenza_simmetrica_AB = A.symmetric_difference(B)
+print(differenza_simmetrica_AB)
+A.clear()
+B.clear()
+print(A)
+print(B)
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+age_set = set(age)
+print(len(age))  # Lunghezza dell'elenco
+print(len(age_set))  # Lunghezza dell'insieme
+stringa:
