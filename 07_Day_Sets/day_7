@@ -37,4 +37,5 @@ age = [22, 19, 24, 25, 26, 24, 25, 24]
 age_set = set(age)
 print(len(age))  # Lunghezza dell'elenco
 print(len(age_set))  # Lunghezza dell'insieme
-stringa:
+stringa: ogni tipo di dati scritto come testo
+elenco:
