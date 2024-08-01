@@ -1,1 +1,85 @@
+lista_vuota = []
+elenco = [1, 2, 3, 4, 5, 6]
+lunghezza_elenco = len(elenco)
+primo_elemento = elenco[0]
+elemento_centrale = elenco[len(elenco) // 2]
+ultimo_elemento = elenco[-1]
+mixed_data_types = ['Alessia', 17, 1.75, 'single', 'San Bernardo']
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+print(it_companies)
+num_aziende = len(it_companies)
+print(num_aziende)
+print(it_companies[0])  # Prima azienda
+print(it_companies[1])  # Seconda azienda
+print(it_companies[-1]) # Ultima azienda
+it_companies[2] = 'Netflix'  # Cambia Microsoft in Netflix
+print(it_companies)
+it_companies.append('Tesla')
+print(it_companies)
+it_companies.insert(len(it_companies) // 2, 'azienda')
+print(it_companies)
+it_companies[1] = it_companies[1].upper()  # Cambia Google in GOOGLE
+print(it_companies)
+it_companies_str = '#; '.join(it_companies)
+print(it_companies_str)
+azienda_da_cercare = 'Amazon'
+exists = azienda_da_cercare in it_companies
+print(exists)
+it_companies.sort()
+print(it_companies)
+it_companies.reverse()
+print(it_companies)
+delete it_companies[:3]
+print(it_companies)
+delete it_companies[-3:]
+print(it_companies)
+len(it_companies) % 2 == 0:
+delete it_companies[len(it_companies) // 2 - 1: len(it_companies) // 2
+delete it_companies[len(it_companies) // 2]
+print(it_companies)
+delete it_companies[0]
+print(it_companies)
+if len(it_companies) % 2 == 0:
+delete it_companies[len(it_companies) // 2 - 1: len(it_companies) // 2 + 1]
+delete it_companies[len(it_companies) // 2]
+print(it_companies)
+del it_companies[-1]
+print(it_companies)
+it_companies.clear()
+print(it_companies)
+delete it_companies
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+full_stack = front_end + back_end
+full_stack.insert(full_stack.index('Redux') + 1, 'Python')
+full_stack.insert(full_stack.index('Python') + 1, 'SQL')
+print(full_stack)
+ages.sort()
+eta_minima = ages[0]
+eta_massima = ages[-1]
+print(eta_minima, eta_massima)
+ages.append(eta_minima)
+ages.append(eta_massima)
+print(ages)
+if len(ages) % 2 == 0
+eta_media = (ages[len(ages) // 2 - 1] + ages[len(ages) // 2]) / 2
+eta_media = ages[len(ages) // 2]
+print(eta_media)
+eta_media = sum(ages) / len(ages)
+print(eta_media)
+intervallo_eta = eta_massima - eta_minima
+print(intervallo_eta)
+confronto_min_media = abs(eta_minima - eta_media)
+confronto_max_media = abs(eta_massima - eta_media)
+print(confronto_min_media, confronto_max_media)
+paesi = ['Cina', 'Russia', 'USA', 'Finlandia', 'Svezia', 'Norvegia', 'Danimarca']
+if len(paesi) % 2 == 0:
+paesi_centrali = paesi[len(paesi) // 2 - 1: len(paesi) // 2 + 1]
+else:
+paesi_centrale = paesi[len(paesi) // 2]
+print(paesi_centrale)
+primi_tre_paesi = paesi[:3]
+scandinavi = paesi[3:]
+print(primi_tre_paesi, scandinavi)
+
 
