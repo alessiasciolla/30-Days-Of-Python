@@ -1,1 +1,78 @@
-
+def add_two_numbers(a, b):
+return a + b
+import math
+def area_of_circle(r):
+return math.pi * r * r
+def add_all_nums(*args):
+total = 0
+for num in args:
+if not isinstance(num, (int, float)):
+return "All elements must be numbers."
+total += num
+return total
+def convert_celsius_to_fahrenheit(celsius):
+return (celsius * 9/5) + 32
+def check_season(month):
+seasons = {
+'autunno': ['settembre', 'ottobre', 'novembre'],
+'inverno': ['dicembre', 'gennaio', 'febbraio'],
+'primavera': ['marzo', 'aprile', 'maggio'],
+'estate': ['giugno', 'luglio', 'agosto']
+ }
+def solve_quadratic_eqn(a, b, c):
+discriminant = b**2 - 4*a*c
+if discriminant < 0:
+return "No real roots"
+elif discriminant == 0:
+root = -b / (2 * a)
+return (root,)
+def print_list(lst):
+for item in lst:
+print(item)
+def add_item(lst, item):
+lst.append(item)
+return lst
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_staff, 'Meat')) # ['Potato', 'Tomato', 'Mango', 'Milk','Meat']
+numbers = [2, 3, 7, 9]
+print(add_item(numbers, 5)) # [2, 3, 7, 9, 5]
+def sum_of_numbers(n):
+return sum(range(n + 1))
+print(sum_of_numbers(5)) # 15
+print(sum_of_numbers(10)) # 55
+print(sum_of_numbers(100)) # 5050
+def sum_of_numbers(n):
+return sum(range(n + 1))
+print(sum_of_numbers(5)) # 15
+print(sum_of_numbers(10)) # 55
+print(sum_of_numbers(100)) # 5050
+def sum_of_numbers(n):
+return sum(range(n + 1))
+print(sum_of_numbers(5)) # 15
+print(sum_of_numbers(10)) # 55
+print(sum_of_numbers(100)) # 5050
+def sum_of_odds(n):
+return sum(num for num in range(n + 1) if num % 2 != 0)
+def sum_of_even(n):
+return sum(num for num in range(n + 1) if num % 2 == 0)
+def is_empty(param):
+return not bool(param)
+def calculate_mean(lst):
+return statistics.mean(lst)
+def calculate_median(lst):
+return statistics.median(lst)
+def calculate_mode(lst):
+return statistics.mode(lst)
+def calculate_range(lst):
+return max(lst) - min(lst)
+def calculate_variance(lst):
+return statistics.variance(lst)
+def calculate_std(lst):
+return statistics.stdev(lst)
+def all_unique(lst):
+return len(lst) == len(set(lst))
+def all_same_type(lst):
+return all(isinstance(item, type(lst[0])) for item in lst)
+def most_populated_countries(countries_data, top_n=10):
+sorted_countries = sorted(countries_data, key=lambda x: x['population'], reverse=True)
+return sorted_countries[:top_n]
