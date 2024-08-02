@@ -1,1 +1,36 @@
-
+cane = {}
+cane={
+'nome':'Laika',
+'colore':'marrone',
+'razza':'lagotto',
+'zampe':'quattro'
+'età al dizionario dei cani':'2'}
+studente:{
+'nome':'Alessia',
+'cognome':'Sciolla',
+'sesso':'maschio',
+'età':'17',
+'stato civile':'single',
+'competenze': ['Flowgorithm', 'Python'],
+'paese': 'Italia',
+'città': 'Bastia Mondovì',
+'indirizzo': 'Via San Fiorenzo, 10'}
+lunghezza_studente = len(studente)
+print(f"Lunghezza del dizionario studente: {lunghezza_studente}")
+competenze = studente['competenze']
+print(f"Competenze: {competenze}")
+print(f"Tipo di dati delle competenze: {type(competenze)}")
+studente['competenze'].extend(['Jayascript', 'C++'])
+print(f"Competenze aggiornate: {studente['competenze']}")
+chiavi_studente = list(studente.keys())
+print(f"Chiavi del dizionario studente: {chiavi_studente}")
+valori_studente = list(studente.values())
+print(f"Valori del dizionario studente: {valori_studente}")
+elenco_tuple_studente = list(studente.items())
+print(f"Elenco di tuple: {elenco_tuple_studente}")
+studente.pop('Via San Fiorenzo, 10')
+print(f"Dizionario studente dopo eliminazione: {studente}")
+del cane
+print(cane)
+except NameError:
+print("Il dizionario 'cane' è stato eliminato.")
